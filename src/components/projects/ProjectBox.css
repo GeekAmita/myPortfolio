@@ -1,0 +1,42 @@
+.dialog {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  margin-bottom: 1rem;
+  padding: 2rem;
+  gap: 0.6rem;
+  text-decoration: none;
+  background-color: var(--secondary);
+}
+
+.stack {
+  color: var(--fontPrimary);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.name {
+  color: var(--fontPrimary);
+  font-size: 2.5rem;
+}
+
+.dis {
+  color: var(--fontSecondary);
+  font-size: 1rem;
+}
+
+.tech {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.techItem {
+  padding: 0.3rem;
+  color: var(--fontSecondary);
+  font-size: 0.8rem;
+  background-color: var(--primary);
+}

@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+:root {
+  --lightRedA05: rgba(108, 48, 48, 0.636);
+  --primary: #151515;
+  --secondary: #202022;
+  --fontPrimary: #fefefe;
+  --fontSecondary: #858585;
+  --fontInactive: #626262;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  user-select: none;
+  background-color: var(--primary);
+  font-family: "Space Mono", mono-space;
+  overflow: hidden;
+}
+
+.fontLarge {
+  color: var(--fontPrimary);
+  font-size: clamp(3.5rem, 4.5vw, 6rem);
+  font-weight: 400;
+  line-height: 7rem;
+}

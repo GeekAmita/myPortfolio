@@ -1,0 +1,121 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+.section1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-grow: 1;
+  padding: 6rem 6rem 0 6rem;
+  align-content: stretch;
+}
+
+.section2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-self: baseline;
+  width: 100%;
+  gap: 3rem;
+  padding: 0 6rem 6rem 6rem;
+}
+
+.intro {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  gap: 3rem;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.about {
+  color: var(--fontSecondary);
+  line-height: 1.8rem;
+  font-size: clamp(1rem, 1vw, 1.3rem);
+  font-weight: 400;
+  width: max(290px, 55%);
+}
+
+.content {
+  margin-top: 3rem;
+  color: var(--fontInactive);
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+
+span {
+  font-size: clamp(0.5rem, 1vw, 0.7rem);
+}
+
+.menuItem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: clamp(0.7rem, 1vw, 0.9rem);
+  gap: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+}
+
+.line {
+  display: block;
+  width: 2rem;
+  height: 1px;
+  background-color: var(--fontInactive);
+}
+
+.content .menuItem:hover .line {
+  cursor: pointer;
+  width: 3rem;
+  background-color: var(--fontPrimary);
+}
+
+.content .menuItem:hover {
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 1.3rem;
+  color: var(--fontPrimary);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  align-self: stretch;
+  width: 160%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5rem 15rem 5rem 15rem 5rem;
+  column-gap: 0.8rem;
+  row-gap: 0.8rem;
+  grid-template-areas:
+    "box0 ."
+    "box0 box1"
+    "box2 box1"
+    "box2 box3"
+    ". box3";
+}
+
+.isActive {
+  transition: all 0.3s;
+  font-size: 1.3rem;
+  color: var(--fontPrimary);
+}
+
+.lineActive {
+  width: 3rem;
+  background-color: var(--fontPrimary);
+}
