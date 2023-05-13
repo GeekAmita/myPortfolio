@@ -24,16 +24,4 @@ function InterestBox() {
   });
 }
 
-// interestList.map((item, index) => {
-//   return (
-//     <InterestBox
-//       key={index}
-//       icon={item.icon}
-//       topic={item.topic}
-//       detail={item.detail}
-//       join={item.join}
-//     />
-//   );
-// });
-
 export default InterestBox;
