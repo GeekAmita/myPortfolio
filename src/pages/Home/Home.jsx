@@ -57,20 +57,16 @@ function Home() {
             switch (activeIndex) {
               case 0:
                 return <ProjectBox />;
-                break;
               case 1:
                 return (
                   <div className="container">
                     <SkillBox />
                   </div>
                 );
-                break;
               case 2:
                 return <InterestBox />;
-                break;
               default:
                 return <ProjectBox />;
-                break;
             }
           })()}
         </div>
