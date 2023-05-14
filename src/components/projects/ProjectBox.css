@@ -80,7 +80,7 @@
   color: var(--fontInactive);
 }
 
-.dialog:hover {
+.listContainer .dialog:hover {
   background-color: var(--secondary);
   transition: all 0.3s;
   transform: scale(1.15);
