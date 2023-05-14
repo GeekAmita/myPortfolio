@@ -1,20 +1,37 @@
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
 .dialog {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   align-self: stretch;
-  margin-bottom: 1rem;
   padding: 2rem;
   gap: 0.6rem;
   text-decoration: none;
   background-color: var(--secondary);
 }
 
+.header {
+  display: flex;
+  width: 100%;
+}
+
 .stack {
+  flex-grow: 1;
   color: var(--fontPrimary);
   font-size: 0.8rem;
   text-transform: uppercase;
+}
+
+.linkImg {
+  display: none;
+  width: 1.3rem;
+  height: 1.3rem;
 }
 
 .name {
@@ -39,4 +56,48 @@
   color: var(--fontSecondary);
   font-size: 0.8rem;
   background-color: var(--primary);
+}
+
+.listContainer:hover .tech {
+  display: none;
+}
+
+.listContainer:hover .dialog {
+  background-color: var(--inactive);
+  gap: 0.8rem;
+}
+
+.listContainer:hover .name {
+  padding: 1.5rem 0rem 0.5rem 0rem;
+  color: var(--fontInactive);
+}
+
+.listContainer:hover .stack {
+  color: var(--fontInactive);
+}
+
+.listContainer:hover .dis {
+  color: var(--fontInactive);
+}
+
+.dialog:hover {
+  background-color: var(--secondary);
+  transition: all 0.3s;
+  transform: scale(1.15);
+}
+
+.dialog:hover .name {
+  color: var(--fontPrimary);
+}
+
+.dialog:hover .stack {
+  color: var(--fontPrimary);
+}
+
+.dialog:hover .dis {
+  color: var(--fontSecondary);
+}
+
+.dialog:hover .linkImg {
+  display: block;
 }
