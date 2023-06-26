@@ -10,7 +10,7 @@
 
 .category {
   color: var(--fontSecondary);
-  font-size: clamp(0.8rem, 1vw, 0.89rem);
+  font-size: clamp(0.8rem, 1.7vw, 0.89rem);
   text-transform: uppercase;
 }
 
@@ -23,5 +23,8 @@
 
 .skillItem {
   color: var(--fontPrimary);
-  font-size: clamp(1.4rem, 1vw, 1.8rem);
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
 }
+/* 
+clamp(1.4rem, 1vw, 1.8rem)
+clamp(0.8rem, 1vw, 0.89rem) */
