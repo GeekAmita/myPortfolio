@@ -1,7 +1,6 @@
 .home {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   height: 100vh;
 }
 
@@ -16,10 +15,6 @@
 
 .section2 {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-self: baseline;
-  width: 100%;
   gap: 3rem;
   padding: 0 6rem 6rem 6rem;
 }
@@ -99,8 +94,7 @@ span {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 5rem 15rem 5rem 15rem 5rem;
-  column-gap: 0.8rem;
-  row-gap: 0.8rem;
+  grid-gap: 0.8rem;
   grid-template-areas:
     "box0 ."
     "box0 box1"
@@ -118,4 +112,49 @@ span {
 .lineActive {
   width: 3rem;
   background-color: var(--fontPrimary);
+}
+
+@media (max-width: 680px) {
+  .home {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    gap: 4rem;
+  }
+  .section1 {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .section2 {
+    justify-content: center;
+  }
+
+  .intro {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about {
+    width: 100%;
+    text-align: center;
+  }
+
+  .content {
+    display: none;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 15rem 15rem 15rem 15rem;
+    grid-gap: 0.8rem;
+    grid-template-areas:
+      "box0"
+      "box1"
+      "box2"
+      "box3";
+  }
 }
