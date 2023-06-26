@@ -101,3 +101,31 @@
 .dialog:hover .linkImg {
   display: block;
 }
+
+@media (max-width: 680px) {
+  .dialog {
+    background-color: var(--secondary);
+    gap: 0.8rem;
+  }
+
+  .stack {
+    color: var(--fontPrimary);
+  }
+
+  .linkImg {
+    display: block;
+  }
+
+  .name {
+    padding: 1.5rem 0rem 0.5rem 0rem;
+    color: var(--fontPrimary);
+  }
+
+  .dis {
+    color: var(--fontSecondary);
+  }
+
+  .tech {
+    display: none;
+  }
+}
