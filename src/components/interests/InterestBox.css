@@ -46,6 +46,13 @@
   font-size: clamp(0.8rem, 1.5vw, 0.95rem);
 }
 
+@media (max-width: 500px) {
+  .detailBox {
+    padding: 0;
+    align-self: stretch;
+  }
+}
+
 @media (max-width: 680px) {
   .case {
     flex-direction: column;
@@ -56,9 +63,5 @@
   .iconBox {
     height: 3.5rem;
     width: 3.5rem;
-  }
-
-  .detailBox {
-    padding: 0;
   }
 }
