@@ -43,7 +43,7 @@
 @media (max-width: 680px) {
   .case {
     flex-direction: column;
-    padding: 1rem;
+    padding: 0;
     gap: 2rem;
   }
 

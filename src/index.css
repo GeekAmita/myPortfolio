@@ -25,7 +25,7 @@ body {
 
 .fontLarge {
   color: var(--fontPrimary);
-  font-size: clamp(3.3rem, 5vw, 6rem);
+  font-size: clamp(2.5rem, 5vw, 6rem);
   font-weight: 400;
   line-height: 7rem;
 }
