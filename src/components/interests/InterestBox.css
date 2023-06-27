@@ -1,3 +1,9 @@
+.interestContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .case {
   display: flex;
   align-items: center;
@@ -44,7 +50,7 @@
   .case {
     flex-direction: column;
     padding: 0;
-    gap: 2rem;
+    gap: 1rem;
   }
 
   .iconBox {
