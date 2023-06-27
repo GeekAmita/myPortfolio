@@ -6,7 +6,7 @@
 
 .headerBox {
   display: none;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 4rem 1rem 0 1rem;
   color: var(--fontInactive);
@@ -17,6 +17,8 @@
   font-size: clamp(0.7rem, 1vw, 0.9rem);
   text-transform: uppercase;
   letter-spacing: 2.5px;
+  padding: 0.3rem 0;
+  border-width: 0;
 }
 
 .section1 {
@@ -181,5 +183,6 @@ span {
 
   .isActive {
     font-size: 0.8rem;
+    border-bottom: 1px solid var(--fontInactive);
   }
 }
