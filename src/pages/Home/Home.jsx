@@ -17,6 +17,19 @@ function Home() {
 
   return (
     <div className="home">
+      <div className="headerBox">
+        {MenuList.map((item, index) => {
+          return (
+            <div
+              className={`headerItem ${activeIndex == index ? "isActive" : ""}`}
+              key={index}
+              onClick={() => onMenuClick(index)}
+            >
+              {item}
+            </div>
+          );
+        })}
+      </div>
       <div className="section1">
         <div className="intro">
           <h1 className="fontLarge">
@@ -34,7 +47,7 @@ function Home() {
             {MenuList.map((item, index) => {
               return (
                 <div
-                  className={`menuItem ${
+                  className={`contentItem ${
                     activeIndex == index ? "isActive" : ""
                   }`}
                   key={index}

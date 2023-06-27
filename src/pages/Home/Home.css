@@ -1,8 +1,24 @@
 .home {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   height: 100vh;
+}
+
+.headerBox {
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4rem 1rem 0 1rem;
+  color: var(--fontInactive);
+}
+
+.headerItem {
+  display: flex;
+  font-size: clamp(0.7rem, 1vw, 0.9rem);
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  padding: 0.3rem 0;
+  border-width: 0;
 }
 
 .section1 {
@@ -16,10 +32,6 @@
 
 .section2 {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-self: baseline;
-  width: 100%;
   gap: 3rem;
   padding: 0 6rem 6rem 6rem;
 }
@@ -56,7 +68,7 @@ span {
   font-size: clamp(0.5rem, 1vw, 0.7rem);
 }
 
-.menuItem {
+.contentItem {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -73,13 +85,13 @@ span {
   background-color: var(--fontInactive);
 }
 
-.content .menuItem:hover .line {
+.content .contentItem:hover .line {
   cursor: pointer;
   width: 3rem;
   background-color: var(--fontPrimary);
 }
 
-.content .menuItem:hover {
+.content .contentItem:hover {
   cursor: pointer;
   transition: all 0.3s;
   font-size: 1.3rem;
@@ -99,8 +111,7 @@ span {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 5rem 15rem 5rem 15rem 5rem;
-  column-gap: 0.8rem;
-  row-gap: 0.8rem;
+  grid-gap: 0.8rem;
   grid-template-areas:
     "box0 ."
     "box0 box1"
@@ -118,4 +129,60 @@ span {
 .lineActive {
   width: 3rem;
   background-color: var(--fontPrimary);
+}
+
+@media (max-width: 680px) {
+  .home {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    gap: 4rem;
+  }
+
+  .headerBox {
+    display: flex;
+  }
+
+  .section1 {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0 1rem;
+  }
+
+  .section2 {
+    justify-content: center;
+  }
+
+  .intro {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about {
+    width: 100%;
+    text-align: center;
+  }
+
+  .content {
+    display: none;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 15rem 15rem 15rem 15rem;
+    grid-gap: 0.8rem;
+    grid-template-areas:
+      "box0"
+      "box1"
+      "box2"
+      "box3";
+  }
+
+  .isActive {
+    font-size: 0.8rem;
+    border-bottom: 1px solid var(--fontInactive);
+  }
 }
