@@ -58,7 +58,7 @@
   background-color: var(--primary);
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (min-width: 680px) {
   .listContainer:hover .tech {
     display: none;
   }
