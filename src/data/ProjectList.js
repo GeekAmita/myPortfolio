@@ -4,7 +4,7 @@ const projectList = [
     name: "Portfolio",
     dis: "My personal portfolio website",
     tech: ["React", "HTML/CSS"],
-    visit: "https://my-portfolio-geekamita.vercel.app/",
+    visit: "https://geekamita.me/",
   },
   {
     stack: "CLI",
