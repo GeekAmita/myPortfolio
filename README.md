@@ -7,7 +7,7 @@
 
 ## Overview
 
-Link to live site: https://geekamita.me
+Link to live site: https://my-portfolio-d7unytdnn-geekamita.vercel.app/
 
 
 
