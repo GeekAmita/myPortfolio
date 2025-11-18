@@ -1,4 +1,4 @@
-# myPortfolio
+# Portfolio
 
 ## Table of Contents
 
