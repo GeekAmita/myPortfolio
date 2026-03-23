@@ -7,7 +7,7 @@
 
 ## Overview
 
-Link to live site: https://geekamita.vercel.app/
+Link to the site: https://geekamita.vercel.app/
 
 ## Built With
 
